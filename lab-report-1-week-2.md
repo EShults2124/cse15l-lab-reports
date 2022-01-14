@@ -11,7 +11,9 @@ First thing's first, you want to go to this
 
 <br />   
 <p align="center">
+
 ![Image](VSCodeButton.png)
+
 </p>
 
 Once installed, you can open the program and should be greeted with a picture that looks similar to this:
@@ -67,7 +69,7 @@ Fri Jan 14, 2022 11:23pm - Prepping [name]
 
 <br /> 
 
-Now that you're connected, you'll be put in some directory wihtin this server. You will be able to move throughout and make changes to the directories and files in this server by using some of the commands below.
+Now that you're connected, you'll be put in some directory within this server. You will be able to move throughout and make changes to the directories and files in this server by using some of the commands below.
 
 
 * ls -- Lists the files and subdirectories in your current directory
@@ -84,9 +86,34 @@ If you ever want to leave the remote server and return to your local computer, e
 <p align="center">
 
 ![Image](exitssh.png)
+
 </p>
 <br />
 
+<br />
+
+### **Moving Files From Client to Server:**
+<br />  
+
+If you want to move a file on your local computer to the server you're using, we must use the **scp command** from your local terminal. The format of the command is shown below:
+
+> $ scp [File Name including .filetype] [your account name]:[desired path]
+
+This means if you have a java file named ComparatorLookup and want it copied to your PA1 folder, the command might look like this:
+
+> $ scp ComparatorLookup.java cse15lajw@ieng6.ucsd.edu:~/PA1
+
+Then you can make sure that it copied correctly going into the correct directory and using the ls command. It should look something like this:
+
+![Image](ls.png)
+
+<br /> 
+
+### **Setting Up an SSH Key:**
+
+<br /> 
+
+Logging into the remote server using the **ssh command** can be tedious so there is a way set up so you can enter the server without using your password.
 
 
 <br /> <br />
