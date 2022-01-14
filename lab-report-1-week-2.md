@@ -113,7 +113,38 @@ Then you can make sure that it copied correctly going into the correct directory
 
 <br /> 
 
-Logging into the remote server using the **ssh command** can be tedious so there is a way set up so you can enter the server without using your password.
+Logging into the remote server using the **ssh command** can be tedious so there is a way set up so you can enter the server without using your password. Follow the directions below to be able to bypass passwords.
+
+1. Enter "ssh-keygen" to create the key your computer will use. It should look like this:
+```
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/[your username]/.ssh/id_rsa):
+``` 
+2. Write or paste the file path you want to save the key in and either create a simple passphrase to use in place of your password or leave it blank for no password.
+```
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in [Path]
+Your public key has been saved in [Path]
+```
+3. Just like how we set a place for the key to end up on our local computer, we have to set aside a folder for it to end up on the remote server. Make a directory named ".ssh" and leave the remote server.
+
+4. Now that both keys are generated, we need to copy the public key to the remote server. We will follow similar steps as we did in the previous section using the **scp command**. Here is the format and an example:
+
+> $ scp [path to the public key from step 2] [account name]~/.ssh/authorized_keys
+
+![Image](sshkey.png)
+ 
+ <br /> 
+Now you should be able to log in without any trouble!
+
+<br /> 
+
+### **Optimizing Remote Running:**
+
+<br /> 
+
 
 
 <br /> <br />
