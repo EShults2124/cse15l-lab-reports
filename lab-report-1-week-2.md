@@ -38,6 +38,7 @@ Once installed, reenter VScode and open a terminal. You can do this by pressing 
 
 ![Image](NewTerminal.png)
 
+To connect to a server you need to type in the ssh command followed by your UCSD course specific account that you can find [here](https://sdacs.ucsd.edu/~icc/index.php).
 
 <br /> <br />
 [Lab Report 1](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
