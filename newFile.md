@@ -3,7 +3,7 @@
 **Pretty please**
 
 ## YOU WILL WORK
-[Link] https://commonmark.org/help/
+[Link](https://commonmark.org/help)
 > Is this enough?
 
 
