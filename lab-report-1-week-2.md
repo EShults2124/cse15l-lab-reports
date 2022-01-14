@@ -10,8 +10,9 @@ First thing's first, you want to go to this
 [link](https://code.visualstudio.com/) and click on the button shown below to download the program. 
 
 <br />   
-
+<p align="center">
 ![Image](VSCodeButton.png)
+</p>
 
 Once installed, you can open the program and should be greeted with a picture that looks similar to this:
 
@@ -39,6 +40,54 @@ Once installed, reenter VScode and open a terminal. You can do this by pressing 
 ![Image](NewTerminal.png)
 
 To connect to a server you need to type in the ssh command followed by your UCSD course specific account that you can find [here](https://sdacs.ucsd.edu/~icc/index.php).
+
+> $ ssh [your account name]
+
+Say yes to what the terminal asks you and input your password. The output should look similar to this
+
+```
+Last login: Fri Jan 2 11:23:15 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+quota: No filesystem specified.
+Hello [acount name], you are currently logged into ieng6-[whatever computer # you are logged into].ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+Fri Jan 14, 2022 11:23pm - Prepping [name]
+```
+
+<br /> 
+
+### **Try Out Some Commands:**
+
+<br /> 
+
+Now that you're connected, you'll be put in some directory wihtin this server. You will be able to move throughout and make changes to the directories and files in this server by using some of the commands below.
+
+
+* ls -- Lists the files and subdirectories in your current directory
+* cd -- changes your directory to the path the succeeds the command
+* pwd -- prints the path you are currently in (you can use this to get back to this directory quickly)
+* mkdir -- creates another directory within your current directory; is named whatever string succeeds it
+* cp -- copy tool to either put a copy of a file in a new directory or to rename a file
+
+Play around with the commands to get a better feel of how they work. Make sure to always know what directory you're in.
+
+If you ever want to leave the remote server and return to your local computer, either type in **ctrl** + **d** or type **exit** into the terminal and hit **enter**. It will look like this when you leave the remote server:
+
+
+<p align="center">
+
+![Image](exitssh.png)
+</p>
+<br />
+
+
 
 <br /> <br />
 [Lab Report 1](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
