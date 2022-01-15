@@ -10,11 +10,10 @@ First thing's first, you want to go to this
 [link](https://code.visualstudio.com/) and click on the button shown below to download the program. 
 
 <br />   
-<p align="center">
+
 
 ![Image](VSCodeButton.png)
 
-</p>
 
 Once installed, you can open the program and should be greeted with a picture that looks similar to this:
 
@@ -83,11 +82,10 @@ Play around with the commands to get a better feel of how they work. Make sure t
 If you ever want to leave the remote server and return to your local computer, either type in **ctrl** + **d** or type **exit** into the terminal and hit **enter**. It will look like this when you leave the remote server:
 
 
-<p align="center">
+
 
 ![Image](exitssh.png)
 
-</p>
 <br />
 
 <br />
@@ -145,9 +143,20 @@ Now you should be able to log in without any trouble!
 
 <br /> 
 
+Even though we've done our best so far to make it easy to run remotely, some things might still be a little slow when going between the server and the client. Here are some options of things that might make it even simpler:
 
+* This isn't advice that isn't unique to server access, but using the up key while in a terminal, can make everything go by so much quicker because you don't need to rewrite commands and file paths a million times.
+* If there's only one command you want to do in the server and immidiately want to leave, you can write your command like this:
+> ssh [account name] [command in quotes]
+![Image](lscommand.png)
+* Another tip not unique to server access is if you know all the commands you want to run, you can run them at once if you separate them with semicolons on the commandline.
+> $ [command 1]; [command 2]; [command 3]; ... [last command]
+* Copying and pasting file paths is always faster than writing them yourself
+
+Try this yourself! You're now ready to work with remote servers.
 
 <br /> <br />
-[Lab Report 1](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+*most of the information on how to do all of this was given on the lab 1 writeup
 
-![Image](GithubPages.png)
+<br /> <br /> <br /> 
+[Don't Click Me](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
