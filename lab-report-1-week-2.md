@@ -95,12 +95,14 @@ If you ever want to leave the remote server and return to your local computer, e
 
 If you want to move a file on your local computer to the server you're using, we must use the **scp command** from your local terminal. The format of the command is shown below:
 
-> $ scp [File Name including .filetype] [your account name]:[desired path]
+```
+$ scp [File Name including .filetype] [your account name]:[desired path]
+```
 
 This means if you have a java file named ComparatorLookup and want it copied to your PA1 folder, the command might look like this:
-
-> $ scp ComparatorLookup.java cse15lajw@ieng6.ucsd.edu:~/PA1
-
+```
+$ scp ComparatorLookup.java cse15lajw@ieng6.ucsd.edu:~/PA1
+```
 Then you can make sure that it copied correctly going into the correct directory and using the ls command. It should look something like this:
 
 ![Image](ls.png)
@@ -130,7 +132,9 @@ Your public key has been saved in [Path]
 
 4. Now that both keys are generated, we need to copy the public key to the remote server. We will follow similar steps as we did in the previous section using the **scp command**. Here is the format and an example:
 
-> $ scp [path to the public key from step 2] [account name]~/.ssh/authorized_keys
+```
+$ scp [path to the public key from step 2] [account name]~/.ssh/authorized_keys
+```
 
 ![Image](sshkey.png)
  
@@ -147,10 +151,15 @@ Even though we've done our best so far to make it easy to run remotely, some thi
 
 * This isn't advice that isn't unique to server access, but using the up key while in a terminal, can make everything go by so much quicker because you don't need to rewrite commands and file paths a million times.
 * If there's only one command you want to do in the server and immidiately want to leave, you can write your command like this:
-> ssh [account name] [command in quotes]
+ 
+```
+$ ssh [account name] [command in quotes]
+```
 ![Image](lscommand.png)
 * Another tip not unique to server access is if you know all the commands you want to run, you can run them at once if you separate them with semicolons on the commandline.
-> $ [command 1]; [command 2]; [command 3]; ... [last command]
+```
+$ [command 1]; [command 2]; [command 3]; ... [last command]
+```
 * Copying and pasting file paths is always faster than writing them yourself
 
 Try this yourself! You're now ready to work with remote servers.
