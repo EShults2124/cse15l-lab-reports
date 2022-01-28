@@ -150,6 +150,7 @@ Now you should be able to log in without any trouble!
 Even though we've done our best so far to make it easy to run remotely, some things might still be a little slow when going between the server and the client. Here are some options of things that might make it even simpler:
 
 * This isn't advice that isn't unique to server access, but using the up key while in a terminal, can make everything go by so much quicker because you don't need to rewrite commands and file paths a million times.
+
 * If there's only one command you want to do in the server and immidiately want to leave, you can write your command like this:
  
 ```
@@ -160,12 +161,40 @@ $ ssh [account name] [command in quotes]
 ```
 $ [command 1]; [command 2]; [command 3]; ... [last command]
 ```
-* Copying and pasting file paths is always faster than writing them yourself
+* Copying and pasting file paths and long account names is always faster than writing them yourself
 
-Try this yourself! You're now ready to work with remote servers.
+It's incredible easy to mess up a file path, so its much easier to go into file explorer, click on the the file path up top and copy and past into into the commandline. This only takes 5 inputs on the keyboard (click, *ctrl* + *C*, and *ctrl* + *V*).
+
+An commandline input like 
+
+```
+$ cd C:\Users\ITSloaner\OneDrive\Documents\GitHub\cse15l-lab-reports>
+```
+
+takes 60 inputs more than just copy and pasting.
+
+ 
+Also, if I have already set up my ssh key, and been going back and forth between the local and private computers, I could save several keystrokes. For example:
+
+```
+$ ssh [account name]
+```
+Writing this out takes me over thirty inputs on my keyboard. If I have already been using this command frequently i can just press up a few times and it will bring ip the same command, saving me over 20 inputs.
+
+<br>
+
+Let's take these two examples in an example of copying multiple files from a local machine to a remote one. Typing out the entire command
+
+```
+$ scp WhereAmI.java cs15lwi22ajf@ieng6.ucsd.edu:~/
+```
+takes about 48-49 keystrokes. The next one would take much less time because we could use 1 keystroke to move up, have the same input appear, highlight the file we copied (1ish - 2ish keystrokes), and replace it with another by going into your directory (about 2 keystrokes; left click file in explorer and hit rename to have it highlighted) and copy (2 keystrokes) and pasting (2 keystrokes) the name of the file into commandline and pressing enter (1 keystroke). The near 50 keystrokes went down two about 9, saving a lot of time.
+
+<br>
+<br>
+
+Try these yourself! You're now ready to work with remote servers.
 
 <br /> <br />
 *most of the information on how to do all of this was given on the lab 1 writeup
 
-<br /> <br /> <br /> 
-[Don't Click Me](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
