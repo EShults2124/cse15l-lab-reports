@@ -71,13 +71,13 @@ Fri Jan 14, 2022 11:23pm - Prepping [name]
 
 Now that you're connected, you'll be put in some directory within this server. You will be able to move throughout and make changes to the directories and files in this server by using some of the commands below.
 
-
+```
 * ls -- Lists the files and subdirectories in your current directory
 * cd -- changes your directory to the path the succeeds the command
 * pwd -- prints the path you are currently in (you can use this to get back to this directory quickly)
 * mkdir -- creates another directory within your current directory; is named whatever string succeeds it
 * cp -- copy tool to either put a copy of a file in a new directory or to rename a file
-
+```
 Play around with the commands to get a better feel of how they work. Make sure to always know what directory you're in.
 
 If you ever want to leave the remote server and return to your local computer, either type in **ctrl** + **d** or type **exit** into the terminal and hit **enter**. It will look like this when you leave the remote server:
