@@ -30,9 +30,10 @@ Now you're ready to write code!
 
 Next you need to learn how to connect to a remote server.
 
-```
-If you are on a computer with Windows click the link below to learn how to install ssh.
-```
+
+>If you are on a computer with Windows click the link below to learn how to install ssh.
+
+
 [SSH Download For Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
 
@@ -71,13 +72,13 @@ Fri Jan 14, 2022 11:23pm - Prepping [name]
 
 Now that you're connected, you'll be put in some directory within this server. You will be able to move throughout and make changes to the directories and files in this server by using some of the commands below.
 
-```
-* ls -- Lists the files and subdirectories in your current directory
-* cd -- changes your directory to the path the succeeds the command
-* pwd -- prints the path you are currently in (you can use this to get back to this directory quickly)
-* mkdir -- creates another directory within your current directory; is named whatever string succeeds it
-* cp -- copy tool to either put a copy of a file in a new directory or to rename a file
-```
+
+* ```ls``` -- Lists the files and subdirectories in your current directory
+* ```cd``` -- changes your directory to the path the succeeds the command
+* ```pwd``` -- prints the path you are currently in (you can use this to get back to this directory quickly)
+* ```mkdir``` -- creates another directory within your current directory; is named whatever string succeeds it
+* ```cp``` -- copy tool to either put a copy of a file in a new directory or to rename a file
+
 Play around with the commands to get a better feel of how they work. Make sure to always know what directory you're in.
 
 If you ever want to leave the remote server and return to your local computer, either type in **ctrl** + **d** or type **exit** into the terminal and hit **enter**. It will look like this when you leave the remote server:
@@ -94,7 +95,7 @@ If you ever want to leave the remote server and return to your local computer, e
 ### **Moving Files From Client to Server:**
 <br />  
 
-If you want to move a file on your local computer to the server you're using, we must use the **scp command** from your local terminal. The format of the command is shown below:
+If you want to move a file on your local computer to the server you're using, we must use the ```scp``` command from your local terminal. The format of the command is shown below:
 
 ```
 $ scp [File Name including .filetype] [your account name]:[desired path]
@@ -104,7 +105,7 @@ This means if you have a java file named ComparatorLookup and want it copied to 
 ```
 $ scp ComparatorLookup.java cse15lajw@ieng6.ucsd.edu:~/PA1
 ```
-Then you can make sure that it copied correctly going into the correct directory and using the ls command. It should look something like this:
+Then you can make sure that it copied correctly going into the correct directory and using the ```ls``` command. It should look something like this:
 
 ![Image](ls.png)
 
@@ -114,9 +115,9 @@ Then you can make sure that it copied correctly going into the correct directory
 
 <br /> 
 
-Logging into the remote server using the **ssh command** can be tedious so there is a way set up so you can enter the server without using your password. Follow the directions below to be able to bypass passwords.
+Logging into the remote server using the ```ssh``` command can be tedious so there is a way set up so you can enter the server without using your password. Follow the directions below to be able to bypass passwords.
 
-1. Enter "ssh-keygen" to create the key your computer will use. It should look like this:
+1. Enter ```"ssh-keygen"``` to create the key your computer will use. It should look like this:
 ```
 $ ssh-keygen
 Generating public/private rsa key pair.
@@ -131,7 +132,7 @@ Your public key has been saved in [Path]
 ```
 3. Just like how we set a place for the key to end up on our local computer, we have to set aside a folder for it to end up on the remote server. Make a directory named ".ssh" and leave the remote server.
 
-4. Now that both keys are generated, we need to copy the public key to the remote server. We will follow similar steps as we did in the previous section using the **scp command**. Here is the format and an example:
+4. Now that both keys are generated, we need to copy the public key to the remote server. We will follow similar steps as we did in the previous section using the ```scp``` command. Here is the format and an example:
 
 ```
 $ scp [path to the public key from step 2] [account name]~/.ssh/authorized_keys
