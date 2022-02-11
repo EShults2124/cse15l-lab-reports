@@ -2,9 +2,12 @@
 
 * Show copying your whole markdown-parse directory to your ieng6 account
 
+To copy an entire directory, you need to use the normal scp command but this time recursively so everything is copied. To do this you need to add in a ```-r``` and the path for the directory. The command structure is like this:
+
 ```
 $ scp -r [to-be copied folder path] [account]:~[new directory name]
 ```
+> If you are copying the directory you are in, you can use ```.``` instead of the full path.
 
 After inputing the command, your terminal will look similar to this:
 ![Image](CSE-Lab3-screenshot1-part1.png)
@@ -12,7 +15,7 @@ After inputing the command, your terminal will look similar to this:
 It will go on for a bit depending on how much is being copied over and it end with all the files that are in the directory being listed:
 ![Image](CSE-Lab3-screenshot1-part2.png)
 
-* Show logging into your ieng6 account after doing this and compiling and running the tests for your repository
+* Logging into your ieng6 account and compiling and running the tests in the repo you copied
 
 ![Image](CSE-Lab3-screenshot2.png)
 
@@ -31,8 +34,19 @@ $ javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar [compiled file name
 The commands and result should look similar to this:
 ![Image](CSE-Lab3-screenshot3.png)
 
-* Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
 
-## Things To Do
 
-Choose one of the Group Choice Options (1-3) from week 5. Complete it for yourself (if you haven’t already), and take the relevant screenshots listed below for your choice. Create a post with a few sentences of description about each. Do this for only one of these options for your lab report.
+* copy and test all in one line
+
+If you want to not type in multiple lines, you can use multiple commands separated by semicolons on one line.
+
+In this case it will take the form of: 
+```
+$ scp -r [to-be copied folder path] [account]:~[new directory name]; [second command]; [third command] ... 
+```
+
+It will end up looking similar to this:
+![Image](CSE-Lab3-screenshot4.png)
+
+![Image](CSE-Lab3-screenshot5.png)
+The last two lines shows the two commands we input on the one line earlier; we did not retype them.
