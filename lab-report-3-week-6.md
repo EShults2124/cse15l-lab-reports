@@ -45,8 +45,13 @@ In this case it will take the form of:
 $ scp -r [to-be copied folder path] [account]:~[new directory name]; [second command]; [third command] ... 
 ```
 
-It will end up looking similar to this:
-![Image](CSE-Lab3-screenshot4.png)
+After scp is run, you will return immediately to your local terminal so you have to ssh immediately and navigate to the directory to run the tests before exiting.
 
-![Image](CSE-Lab3-screenshot5.png)
+It will end up looking similar to this:
+![Image](scpFinal.png)
+...
+![Image](sshThing.png)
+
 The last two lines shows the two commands we input on the one line earlier; we did not retype them.
+
+I chose to use a makefile to lessen the amount of commands I would write in command line.
