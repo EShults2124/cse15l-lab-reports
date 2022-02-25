@@ -1,10 +1,8 @@
 # Testing and Debugging Code
 
-My Markdown Parse Repo:
-https://github.com/EShults2124/markdown-parse 
+[My Markdown Parse Repo:](https://github.com/EShults2124/markdown-parse) 
 
-The Other Team's Repo:
-https://github.com/austin-li/CSE15L-TheLunaMoths
+[The Other Team's Repo](https://github.com/austin-li/CSE15L-TheLunaMoths)
 
 * A link to your markdown-parse repository and a link to the one you reviewed
 
@@ -37,8 +35,13 @@ My Running Test: Failure
 My Actual Output:
 ![Image](Snippet1RealOutput.png)
  
+LunaMoths' Running Test:
+![Image](SnippetRemoteTest.png)
 
+LunaMoths' Output: 
+![Image](Snippet1LunaMothsRealOutput.png)
 
+<br/>
 
 ## Snippet 2
 
@@ -48,11 +51,16 @@ Test Code:
 ![Image](Snippet2TestCode.png)
 
 My Running Test: Failure
-![Image](Snippet2Test.png)
+![Image](SnippetLocalTest.png)
 
 My Actual Output:
 ![Image](Snippet2RealOutput.png)
 
+LunaMoths' Running Test:
+![Image](SnippetRemoteTest.png)
+
+LunaMoths' Output: 
+![Image](Snippet2LunaMothsRealOutput.png)
 
 ## Snippet 3
 
@@ -63,7 +71,19 @@ Test Code:
 ![Image](Snippet3TestCode.png)
 
 My Running Test: Failure
-![Image](Snippet3Test.png)
+![Image](SnippetLocalTest.png)
 
 My Actual Output:
 ![Image](Snippet3RealOutput.png)
+
+LunaMoths' Running Test:
+![Image](SnippetRemoteTest.png)
+
+LunaMoths' Output: 
+![Image](Snippet3LunaMothsRealOutput.png)
+
+## Potential Solutions
+
+* 
+* 
+* 
