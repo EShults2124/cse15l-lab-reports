@@ -35,7 +35,7 @@ My Running Test: Failure
 My Actual Output:
 ![Image](Snippet1RealOutput.png)
  
-LunaMoths' Running Test:
+LunaMoths' Running Test: Failure
 ![Image](SnippetRemoteTest.png)
 
 LunaMoths' Output: 
@@ -56,7 +56,7 @@ My Running Test: Failure
 My Actual Output:
 ![Image](Snippet2RealOutput.png)
 
-LunaMoths' Running Test:
+LunaMoths' Running Test: Failure
 ![Image](SnippetRemoteTest.png)
 
 LunaMoths' Output: 
@@ -76,7 +76,7 @@ My Running Test: Failure
 My Actual Output:
 ![Image](Snippet3RealOutput.png)
 
-LunaMoths' Running Test:
+LunaMoths' Running Test: Failure
 ![Image](SnippetRemoteTest.png)
 
 LunaMoths' Output: 
@@ -84,6 +84,15 @@ LunaMoths' Output:
 
 ## Potential Solutions
 
-* 
-* 
-* 
+* Backticks 
+
+What causes issues is not if there is a backtick within either the brackets or parentheses, but if there are a certain number inside and outside. I don't believe there is a way to fix this very easily/without creating many extra conditions because we have to ensure that it doesn't read it as though box was supposed to contain the open bracket. Also, there are multiple combinations of backticks that do the same thing. If you fix the case for a singular backtick, you have to do the same for large groups of them.
+
+* Nested Parentheses:
+
+One way I can think of that will remedy this bug is having the program keep track of only the last closing parenthesis of the line or the last one before the next open bracket. this will make sure to keep everything nested within the first and last parentheses. The code would probably just be to have another variable that holds the index of the next open bracket and the end of the line. You probably just need to put replace the subset arguments to reflect the last close parenth before the ope bracket.
+
+* New Lines: I think that this symptom is pretty simple to eliminate. Like in a lot of markup implementation, things won't actually move to a new line unless you hit enter twice. So instead of it seeing one \n as a new line, I presume that it only counts if there are exactly two in a row. If you place a new line have something in it, and new line again, it should still work. So we only need to have part of our method track if there are multiple '\n's in succession and then if we find that to be true, just have it skip over adding that link. 
+
+
+Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
