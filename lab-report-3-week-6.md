@@ -54,4 +54,4 @@ It will end up looking similar to this:
 
 The last two lines shows the two commands we input on the one line earlier; we did not retype them.
 
-I chose to use a makefile to lessen the amount of commands I would write in command line.
+I chose to use a makefile to lessen the amount of commands I would write in command line. You can see which commands are in it through the pic above.
