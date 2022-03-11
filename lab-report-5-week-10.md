@@ -14,7 +14,7 @@ How I found the differences:
 $ diff [filepath1] [filepath2]
 ```
 
-5. Choose the different outputs you want to address
+Choose the different outputs you want to address
 
 Example of what the output to diff should look like:
 
